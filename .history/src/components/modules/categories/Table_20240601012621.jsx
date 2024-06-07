@@ -1,0 +1,49 @@
+import { useTranslation } from 'react-i18next';
+import { Button } from '@chakra-ui/react';
+import * as FiIcons from "react-icons/fi";
+
+import SharedTable from '../../shared/table/Table';
+import theme from "../../global/theme";
+
+const Table = ({ data, page, handleDelete, handleUpdate }) => {
+  log
+  const { t } = useTranslation();
+
+  return (
+    <SharedTable>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>{t('pages.categories.name')}</th>
+          <th>{t('pages.categories.description')}</th>
+          <th>{t('general.action')}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map(el => (
+          <tr key={el.id}>
+            <td>{el.id}</td>
+            <td>{el.title || "-"}</td>
+           
+            <td>
+              <Button
+                bg={theme.success} color={theme.light} size="sm"
+                onClick={() => handleUpdate(el)} me={2} borderRadius={2}
+              >
+                <FiIcons.FiEdit size={18} />
+              </Button>
+              <Button
+                bg={theme.error} color={theme.light} size="sm"
+                onClick={() => handleDelete(el)} me={2} borderRadius={2}
+              >
+                <FiIcons.FiEdit size={18} />
+              </Button>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </SharedTable>
+  )
+}
+
+export default Table

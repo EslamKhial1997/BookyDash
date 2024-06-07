@@ -1,0 +1,107 @@
+{
+  "validation": {
+    "required": "this field is required",
+    "min_length": "minimum length is",
+    "max_length": "maximum length is"
+  },
+  "general": {
+    "create": "create",
+    "edit": "edit",
+    "update": "update",
+    "delete": "delete",
+    "save": "save",
+    "upload": "upload",
+    "download": "download",
+    "action": "action",
+    "search": "search",
+    "filter": "filter",
+    "close": "close",
+    "clear": "clear",
+    "remove": "remove",
+    "details": "details",
+    "copy": "copy",
+    "new": "new",
+    "view": "view",
+    "select": "select",
+    "excel": "excel",
+    "egp": "egp",
+    "loading": "loading",
+    "date_from": "date from",
+    "date_to": "date to",
+    "save_and_add_another": "save and add another",
+    "delete_item": "do you want to delete this item ?",
+    "no_data": "there are not data"
+  },
+  "layout": {
+    "navbar": {
+      "toggle_lang": "toggle language",
+      "notifications": "notifications",
+      "cart": "cart",
+      "profile": "profile",
+      "logout": "logout"
+    },
+    "sidebar": {
+      "navigation": "navigation",
+      "dashboard": "dashboard",
+      "categories": "categories",
+      "challenges": "challenges",
+      "settings": "settings"
+    }
+  },
+  "pages": {
+    "auth": {
+      "welcome_1": "welcome back",
+      "login_hint": "now you can login to your account",
+      "welcome_2": "sign in to your account to continue",
+      "welcome_3": "register an account for free",
+      "welcome_4": "enter you email to reset your account",
+      "registered": "your account has been created successfully, please wait for the admin to approve it",
+      "reset_password": "reset password",
+      "change_password": "change password",
+      "password_reset": "password reset successfully",
+      "password_changed": "password changed successfully",
+      "name": "name",
+      "email": "email",
+      "phone": "phone",
+      "pwd": "password",
+      "role": "role",
+      "merchant": "merchant",
+      "marketer": "marketer",
+      "forget_password": "forget password ?",
+      "reset": "reset",
+      "login": "login",
+      "donot_have_account": "don't have an account ?",
+      "register": "register",
+      "hane_an_account": "already have an account ?"
+    },
+    "dashboard": {
+      "dashboard": "dashboard",
+      "users": "users",
+      "categories": "categories",
+      "challenges": "challenges"
+    },
+    "settings": {
+      "settings": "settings",
+      "system_name": "system name",
+      "system_logo": "system logo",
+      "excel_sample_file": "excel sample file",
+      "facebook_link": "facebook link",
+      "whatsapp_number": "whatsapp number",
+      "dollar_price": "dollar price",
+      "whatsapp_template": "whatsapp template",
+      "help_page": "help page"
+    },
+    "categories": {
+      "categories": "categories",
+      "name": "name",
+      "description": "description"
+    },
+    "challenges": {
+      "challenges": "challenges",
+      "name": "name",
+      "description": "description",
+      "points": "points",
+      "category": "category"
+    }
+  }
+}

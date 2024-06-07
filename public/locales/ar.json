@@ -1,0 +1,107 @@
+{
+  "validation": {
+    "required": "هذا الحقل مطلوب",
+    "min_length": "اقل قيمة",
+    "max_length": "اقصى قيمة"
+  },
+  "general": {
+    "create": "انشاء",
+    "edit": "تعديل",
+    "update": "تحديث",
+    "delete": "حذف",
+    "save": "حفظ",
+    "upload": "رفع",
+    "download": "تنزيل",
+    "action": "اختر عملية",
+    "search": "ابحث عن شي",
+    "filter": "فلتر",
+    "close": "اغلاق",
+    "clear": "حذف",
+    "remove": "حذف",
+    "details": "تفاصيل",
+    "copy": "اضغط للنسخ",
+    "new": "جديد",
+    "view": "عرض",
+    "select": "اختر",
+    "excel": "ملف اكسل",
+    "egp": "جنية",
+    "loading": "جار التحميل",
+    "date_from": "من تاريخ",
+    "date_to": "الى تاريخ",
+    "save_and_add_another": "حفظ واضف اخرى",
+    "delete_item": "هل تريد حذف العنصر ؟",
+    "no_data": "لا يوجد بيانات"
+  },
+  "layout": {
+    "navbar": {
+      "toggle_lang": "تحويل اللغة",
+      "notifications": "الاشعارات",
+      "cart": "السلة",
+      "profile": "الملف الشخصي",
+      "logout": "تسجيل الخروج"
+    },
+    "sidebar": {
+      "navigation": "روابط التنقل",
+      "dashboard": "لوحة التحكم",
+      "categories": "الاقسام",
+      "challenges": "التحديات",
+      "settings": "الاعدادات"
+    }
+  },
+  "pages": {
+    "auth": {
+      "welcome_1": "مرحبا بك مجددا",
+      "login_hint": "الان يمكنك تسجيل الدخول الى حسابك",
+      "welcome_2": "قم بتسجيل الدخول الى حسابك لاستكمال الخطوات التالية",
+      "welcome_3": "إذا لم يكن لديك حساب، قم بإنشاء حساب جديد",
+      "welcome_4": "ادخل البريد الالكتروني لاستعادة حسابك",
+      "registered": "لقد تم تسجيل حساب جديد, إنتظر حين تاكيد الحساب من قبل الإدارة",
+      "reset_password": "استعادة كلمة المرور",
+      "change_password": "تغيير كلمة المرور",
+      "password_reset": "تم استعادة كلمة مرور حسابك، من فضلك افحص بريدك الالكتروني",
+      "password_changed": "تم تغيير كلمة المرور بنجاح، يمكنك الان تسجيل الدخول",
+      "name": "الاسم",
+      "email": "البريد الالكتروني",
+      "phone": "الهاتف",
+      "pwd": "كلمة المرور",
+      "role": "نوع الحساب",
+      "merchant": "تاجر",
+      "marketer": "مسوق",
+      "forget_password": "نسيت كلمة المرور ؟",
+      "reset": "إستعادة",
+      "login": "تسجيل الدخول",
+      "donot_have_account": "ليس لديك حساب ؟",
+      "register": "التسجيل",
+      "hane_an_account": "بالفعل لديك حساب ؟"
+    },
+    "dashboard": {
+      "dashboard": "لوحة التحكم",
+      "users": "المستخدمين",
+      "categories": "الاقسام",
+      "challenges": "التحديات"
+    },
+    "settings": {
+      "settings": "الاعدادات",
+      "system_name": "اسم السيستم",
+      "system_logo": "اللوجو",
+      "excel_sample_file": "مثال رفع ملف اكسل",
+      "facebook_link": "رابط الفيسبوك",
+      "whatsapp_number": "رقم الواتساب",
+      "dollar_price": "سعر الدولار",
+      "whatsapp_template": "رسالة الواتساب",
+      "help_page": "صفحة المساعدة"
+    },
+    "categories": {
+      "categories": "الاقسام",
+      "name": "اسم القسم",
+      "description": "الوصف"
+    },
+    "challenges": {
+      "challenges": "التحديات",
+      "name": "اسم التحدي",
+      "description": "وصف التحدي",
+      "points": "عدد النقاط",
+      "category": "القسم"
+    }
+  }
+}
