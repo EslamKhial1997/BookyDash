@@ -165,6 +165,7 @@ const Login = () => {
                 color={theme.light}
                 borderRadius={2}
                 _hover={{ bg: theme.primary }}
+                isLoading={auth.isLoading}
               >
                 {t("pages.auth.login")}
               </Button>

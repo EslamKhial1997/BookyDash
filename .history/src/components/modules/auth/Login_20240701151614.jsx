@@ -99,6 +99,8 @@ const Login = () => {
                 </FormLabel>
                 <Input
                   type="email"
+                  value={email}
+                  onChange={()=>{}}
                   placeholder={t("pages.auth.email")}
                   border="none"
                   color={theme.dark}
@@ -165,6 +167,7 @@ const Login = () => {
                 color={theme.light}
                 borderRadius={2}
                 _hover={{ bg: theme.primary }}
+                isLoading={auth.isLoading}
               >
                 {t("pages.auth.login")}
               </Button>

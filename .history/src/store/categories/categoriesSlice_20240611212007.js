@@ -17,7 +17,7 @@ export const getCategories = createAsyncThunk(
       // const { page = 1, size = 10, search = "" } = args;
       // const filter = filterRequest(args.filter);
       /* ?page=${page}&size=${size}&search=${search}${filter} */
-      const { data } = await axios.get(`http://178.62.205.20:3006/api/v1/category`);
+      const { data } = await axios.get(`http://localhost:3006/api/v1/category`);
       return thunkApi.fulfillWithValue(data);
     } catch (e) {
       return thunkApi.rejectWithValue(e.response.data);
@@ -30,7 +30,7 @@ export const createCategory = createAsyncThunk(
   async (args, thunkApi) => {
    
     try {
-      const { data } = await axios.post("http://178.62.205.20:3006/api/v1/category", args);
+      const { data } = await axios.post("http://localhost:3006/api/v1/category", args);
       return thunkApi.fulfillWithValue(data);
     } catch (e) {
       return thunkApi.rejectWithValue(e.response.data);
@@ -42,7 +42,7 @@ export const updateCategory = createAsyncThunk(
   "categories/updateCategory",
   async (args, thunkApi) => {
     try {
-      const { data } = await axios.put(`http://178.62.205.20:3006/api/v1/category/${args._id}`, {
+      const { data } = await axios.put(`http://localhost:3006/api/v1/category/${args._id}`, {
         title:args.title
       });
       return thunkApi.fulfillWithValue(data);
@@ -56,7 +56,7 @@ export const deleteCategory = createAsyncThunk(
   "categories/deleteCategory",
   async (args, thunkApi) => {
     try {
-      const { data } = await axios.delete(`http://178.62.205.20:3006/api/v1/category/${args}`);
+      const { data } = await axios.delete(`http://localhost:3006/api/v1/category/${args}`);
       return thunkApi.fulfillWithValue(data);
     } catch (e) {
       return thunkApi.rejectWithValue(e.response.data);

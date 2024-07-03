@@ -38,6 +38,7 @@ const Login = () => {
   const dispatch = useDispatch();
   const auth = useSelector((state) => state.auth);
 
+
   const {
     register,
     handleSubmit,
@@ -99,6 +100,8 @@ const Login = () => {
                 </FormLabel>
                 <Input
                   type="email"
+                
+                
                   placeholder={t("pages.auth.email")}
                   border="none"
                   color={theme.dark}
@@ -124,6 +127,8 @@ const Login = () => {
                     placeholder={t("pages.auth.pwd")}
                     border="none"
                     color={theme.dark}
+                  
+                  
                     bg={theme.body}
                     autoComplete="false"
                     _placeholder={{ color: theme.text }}
@@ -165,6 +170,8 @@ const Login = () => {
                 color={theme.light}
                 borderRadius={2}
                 _hover={{ bg: theme.primary }}
+                isLoading={auth.isLoading}
+                onClick={handleSubmitLogin}
               >
                 {t("pages.auth.login")}
               </Button>

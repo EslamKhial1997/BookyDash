@@ -38,6 +38,7 @@ const Login = () => {
   const dispatch = useDispatch();
   const auth = useSelector((state) => state.auth);
 
+
   const {
     register,
     handleSubmit,
@@ -56,25 +57,7 @@ const Login = () => {
         alignItems="center"
       >
         <Box bg={theme.light} padding={8} className="auth-box" borderRadius={2}>
-          <Box textAlign="center" pt={4}>
-            <Heading
-              color={theme.dark}
-              fontSize={22}
-              textTransform="capitalize"
-              mb={2}
-            >
-              {t("pages.auth.welcome_1")}
-            </Heading>
-
-            <Text
-              color={theme.gary1}
-              fontSize={16}
-              textTransform="capitalize"
-              mb={4}
-            >
-              {t("pages.auth.login_hint")}
-            </Text>
-          </Box>
+        
 
           <Divider borderColor={theme.border} marginBlock={6} />
 
@@ -99,6 +82,8 @@ const Login = () => {
                 </FormLabel>
                 <Input
                   type="email"
+                
+                
                   placeholder={t("pages.auth.email")}
                   border="none"
                   color={theme.dark}
@@ -124,6 +109,8 @@ const Login = () => {
                     placeholder={t("pages.auth.pwd")}
                     border="none"
                     color={theme.dark}
+                  
+                  
                     bg={theme.body}
                     autoComplete="false"
                     _placeholder={{ color: theme.text }}
@@ -165,6 +152,8 @@ const Login = () => {
                 color={theme.light}
                 borderRadius={2}
                 _hover={{ bg: theme.primary }}
+                isLoading={auth.isLoading}
+               
               >
                 {t("pages.auth.login")}
               </Button>

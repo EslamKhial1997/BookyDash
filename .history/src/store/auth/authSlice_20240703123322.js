@@ -11,8 +11,9 @@ let initialState = {
 };
 
 export const login = createAsyncThunk("auth/login", async (args, thunkApi) => {
+  console.log(args);
   try {
-    const { data } = await axios.post("http://178.62.205.20:3006/api/v1/auth/login", args);
+    const { data } = await axios.post("http://178.62.205.20:3006/apiv1/login", args);
     return thunkApi.fulfillWithValue(data);
   } catch (e) {
     return thunkApi.rejectWithValue(e.response.data);

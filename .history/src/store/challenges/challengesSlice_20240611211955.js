@@ -17,7 +17,7 @@ export const getChallenges = createAsyncThunk(
       const { page = 1, size = 10, search = "" } = args;
       const filter = filterRequest(args.filter);
       const { data } = await axios.get(
-        `http://178.62.205.20:3006/api/v1/header`
+        `http://localhost:3006/api/v1/header`
         // ?page=${page}&size=${size}&search=${search}${filter}`
       );
       return thunkApi.fulfillWithValue(data);
@@ -32,7 +32,7 @@ export const createChallenge = createAsyncThunk(
   async (args, thunkApi) => {
     console.log(args.image[0]);
     try {
-      const { data } = await axios.post("http://178.62.205.20:3006/api/v1/header", {
+      const { data } = await axios.post("http://localhost:3006/api/v1/header", {
         title:args.title,
         subtitle:args.subtitle,
         image:args.image[0],
@@ -55,7 +55,7 @@ export const updateChallenge = createAsyncThunk(
   async (args, thunkApi) => {
     try {
       const { data } = await axios.put(
-        `http://178.62.205.20:3006/api/v1/header/${args.id}`,
+        `http://localhost:3006/api/v1/header/${args.id}`,
         args.values
       );
       return thunkApi.fulfillWithValue(data);
@@ -71,7 +71,7 @@ export const deleteChallenge = createAsyncThunk(
     console.log(args);
     try {
       const { data } = await axios.delete(
-        `http://178.62.205.20:3006/api/v1/header/${args._id}`
+        `http://localhost:3006/api/v1/header/${args._id}`
       );
       return thunkApi.fulfillWithValue(data);
     } catch (e) {

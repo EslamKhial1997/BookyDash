@@ -34,7 +34,8 @@ const Login = () => {
   const { t } = useTranslation();
   const toast = useToast({ position: "top", duration: 2000, status: "error" });
   const navigate = useNavigate();
-
+const [email , setEmail] = useState("")
+const [email , setPasswrod] = useState("")
   const dispatch = useDispatch();
   const auth = useSelector((state) => state.auth);
 
@@ -99,6 +100,8 @@ const Login = () => {
                 </FormLabel>
                 <Input
                   type="email"
+                  value={email}
+                  onChange={(e)=>{setEmail(e.target.value);}}
                   placeholder={t("pages.auth.email")}
                   border="none"
                   color={theme.dark}
@@ -165,6 +168,7 @@ const Login = () => {
                 color={theme.light}
                 borderRadius={2}
                 _hover={{ bg: theme.primary }}
+                isLoading={auth.isLoading}
               >
                 {t("pages.auth.login")}
               </Button>
